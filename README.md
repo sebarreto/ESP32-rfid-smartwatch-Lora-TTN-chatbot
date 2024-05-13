@@ -56,3 +56,14 @@ The code is attached in this repository.
 ### LoRaWan connection
 
 ![LoRaWan connection](https://i.ibb.co/vmgqnx2/gateway-dusun.jpg)
+
+We enter our Internet router configuration to include the new Lora gateway. After obtained a IP Address by DHCP, we'll enter to manage Lora gateway and obtain EUI code.
+
+![DHCP Configuration](https://i.ibb.co/k94XH87/gateway-UI-DHCP.png)
+
+After that, we create an account on The Things Network (TTN), create a new project, and add a new gateway.
+
+![TTN Configuration](https://i.ibb.co/JCH9JKX/lora-config.png)
+
+### LoRaWan Smartwatch
+
