@@ -39,4 +39,20 @@ patient monitoring.
 
 ![General use case](https://i.ibb.co/6W3cNx1/use-case-general.png)
 
+1. Safe station is built by a RFID reader and ESP32 board connected to Wi-Fi. The patient get close the RFID key when he feel under a panic situation. Following medical indications.
+2. Smartwatch will be a device connected by LoRaWan that will record heartbeats at all times.
+3. Chatbot WhatsApp. With data coming from the safe station and the smartwatch, backend process will trigger a comunication process with patieten troghut a chatbot. In this way the patient will start to calm down in other hand he'll give us important information following the question & answer game pre programmed.
 
+### Safe station
+
+![Safe station](https://i.ibb.co/p1bTYSR/estacion-segura.jpg)
+
+The safe station allows patients to actively report a panic attack in progress.
+
+![Safe station schematic](https://i.ibb.co/k3m2tXL/esp32-rc522.png)
+
+The code is attached in this repository.
+
+### LoRaWan connection
+
+![LoRaWan connection](https://i.ibb.co/vmgqnx2/gateway-dusun.jpg)
