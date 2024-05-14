@@ -65,5 +65,34 @@ After that, we create an account on The Things Network (TTN), create a new proje
 
 ![TTN Configuration](https://i.ibb.co/JCH9JKX/lora-config.png)
 
+The configuration JSON file is attached.
+
 ### LoRaWan Smartwatch
 
+![LoRaWan smartwatch](https://i.ibb.co/KLVjNgX/reloj-unboxing.jpg)
+
+This smartwatch model works with EU868MHz frequency. You can buy it here: https://www.hktlora.com/product/lorawan-smart-watch/ 
+
+![TTN Configuration end device](https://i.ibb.co/55XMyc8/ttn-end-device.png)
+
+We add the smartwatch as an end device from left panel. This model works with LoRaWAN 1.0.3 version. It's important to obtain this information from supplier.
+
+You can check how to add a new device from here: https://www.thethingsindustries.com/docs/devices/adding-devices/
+
+Before to add an end device, we need to create an application. Following this guide: https://www.thethingsindustries.com/docs/integrations/adding-applications/ 
+
+![TTN Configuration webhook](https://i.ibb.co/cFxYsWY/webhook-ttn.png)
+
+Here we've added a webhook to interact with the backend when the smartwatch exceeds a defined threshold for heartbeats.
+
+![TTN Configuration decoder](https://i.ibb.co/VmkTqW8/ttn-decoder.png)
+
+Here we've programmed a valid uplink payload for this smartwatch model. Example code is attached.
+
+### Testing
+
+![Test](https://i.ibb.co/F0YHbxm/test.png)
+
+There we activated a panic episode by simulating it at 60 beats per second. In this case the chatbot sends the first message to the patients to contain the episode and collect data. Likewise, the process is activated when the patient actively touches the RFID sensor to force interaction.
+
+*If you want to know more about the backend and chatbot definitions. Please let me know.*
